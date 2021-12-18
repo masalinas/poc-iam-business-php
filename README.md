@@ -146,19 +146,25 @@ Select "Listen for Xdebug" configuration from previous list and start it. Set an
 ![XDebug Visual Code debugger](captures/XDebug_Debug.png "XDebug Visual Code debugger")
 
 
-## install symfony maker bundle development dependencies to create entities, repositories and controllers
+## Install development dependencies 
+
+Install symfony maker bundle to create entities, repositories and controllers
 
 ```shell
 composer require --dev symfony/maker-bundle
 ```
 
-## Install symfony orm pack bundle dependencies to create repositories for datasources
+## Install runtime dependencies 
+
+Install symfony orm pack bundle dependencies to create repositories for datasources. This dependency installed Doctrine dependency indirectly.
 
 ```shell
 composer require symfony/orm-pack
 ```
 
-## Install keycloak bundle adapter
+## Install keycloak runtime dependency
+
+This Symfony  bundle adapter integrate keycloak with symfony security
 
 ```shell
 composer require abel/keycloak-bearer-only-adapter-bundle
@@ -185,7 +191,7 @@ OAUTH_KEYCLOAK_CLIENT_SECRET=df1c0d80-5c8a-49c3-9293-92279b12a152
 ###< Keycloak ###
 ```
 
-## Create Entity, Repository and Controller for your mock model
+## Create Entities, Repositories or Controllers for your mock domain model
 
 Create a Product entity
 
