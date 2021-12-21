@@ -32,7 +32,8 @@ class ProductController extends AbstractController
 
         $response = new Response();
         $response->headers->set('Content-Type', 'application/json');
-        $response->setContent(json_encode(['data' => $products]));
+        //$response->setContent(json_encode(['data' => $products]));
+        $response->setContent(json_encode($products));
 
         return $response;
     }
