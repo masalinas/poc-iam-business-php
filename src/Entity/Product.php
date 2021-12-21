@@ -37,6 +37,14 @@ class Product
      */
     private $active;
 
+    public function __construct(string $code, string $description, float $price, bool $active)
+    {
+        $this->code = $code;
+        $this->description = $description;
+        $this->price = $price;
+        $this->active = $active;
+    }
+
     public function getId(): ?int
     {
         return $this->id;

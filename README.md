@@ -162,6 +162,12 @@ Install symfony orm pack bundle dependencies to create repositories for datasour
 composer require symfony/orm-pack
 ```
 
+## Install CORS dependencies 
+
+```shell
+composer require nelmio/cors-bundle
+```
+
 ## Install keycloak runtime dependency
 
 This Symfony  bundle adapter integrate keycloak with symfony security
