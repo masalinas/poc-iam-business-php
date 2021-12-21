@@ -1,18 +1,14 @@
 <?php
-
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
 
 use App\Entity\Product;
 
 class ProductController extends AbstractController
 {
-    private $products = array();
-
     public function __construct() {
         $this->data = [new Product("001", "Apple", 5, true),
                        new Product("002", "Banana", 4.3, false),
@@ -32,7 +28,6 @@ class ProductController extends AbstractController
 
         $response = new Response();
         $response->headers->set('Content-Type', 'application/json');
-        //$response->setContent(json_encode(['data' => $products]));
         $response->setContent(json_encode($products));
 
         return $response;
