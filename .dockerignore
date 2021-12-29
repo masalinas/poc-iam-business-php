@@ -1,0 +1,8 @@
+var/
+vendor/
+docker/
+Dockerfile
+captures/
+exports/
+.vscode/
+Dockerfile
